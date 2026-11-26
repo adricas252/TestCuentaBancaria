@@ -3,7 +3,6 @@ public class CuentaBancaria {
     private String titular;
     private double saldo;
 
-    //Constructor
     public CuentaBancaria(String titular, double saldo) {
         if (titular == null || titular.trim().isEmpty()) {
             throw new IllegalArgumentException("El titular no puede ser nulo ni estar vacio");
@@ -16,17 +15,18 @@ public class CuentaBancaria {
         this.saldo = saldo;
     }
 
-    //Getter y Setter de Titular
     public String getTitular() {
+
         return titular;
     }
 
     public void setTitular(String titular) {
+
         this.titular = titular;
     }
 
-    //Getter de Saldo
     public double getSaldo() {
+
         return saldo;
     }
 
